@@ -15,22 +15,22 @@
 //SWITCH STATEMENT
 switch(env) {
   case "dev":
-     sendAmount= amount + 0.1;
+     sendAmount= amount + amount * 0.1;
      console.log(sendAmount);
      document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
     break;
   case "test":
-    sendAmount= amount + 0.2;
+    sendAmount= amount + amount * 0.2;
     console.log(sendAmount);
     document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
     break;
   case "stage":
-    sendAmount= amount + 0.3;
+    sendAmount= amount + amount * 0.3;
     console.log(sendAmount);
     document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
     break;
  case "prod":
-    sendAmount= amount + 0.05;
+    sendAmount= amount + amount * 0.05;
     console.log(sendAmount);
     document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
     break;
@@ -43,39 +43,77 @@ switch(env) {
 ///IF ELSE STATEMENT
      if(env == "dev")
      {
-     sendAmount= amount + 0.1;
+     sendAmount= amount + amount * 0.1;
      console.log(sendAmount);
      document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
      }
      else if(env == "test")
      {
-    sendAmount= amount + 0.2;
+    sendAmount= amount + amount * 0.2;
     console.log(sendAmount);
     document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
      }
      else if(env == "stage")
      {
-    sendAmount= amount + 0.3;
+    sendAmount= amount + amount * 0.3;
     console.log(sendAmount);
     document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
      }
      else if(env == "prod")
      {
-    sendAmount= amount + 0.05;
+    sendAmount= amount + amount * 0.05;
     console.log(sendAmount);
     document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
      }
 
      else{
         console.log("No Increment");
-        document.getElementById("demo").innerHTML =  "The total sending amount with no increment is:" +sendAmount;
+        document.getElementById("demo").innerHTML =  "The total sending amount with no increment is:" *sendAmount;
      }
 
 
      //TERNARY OPERATOR
-     env == "dev" ? sendAmount= amount + 0.1 : env == "test" ? sendAmount= amount + 0.2 : env == "stage" ? sendAmount= amount + 0.3 :
-     env == "prod" ? sendAmount= amount + 0.05 : "No Increment!";
+     env == "dev" ? sendAmount= amount + amount * 0.1 : env == "test" ? sendAmount= amount + amount * 0.2 : env == "stage" ? sendAmount= amount + amount * 0.3 :
+     env == "prod" ? sendAmount= amount + amount * 0.05 : "No Increment!";
      console.log(sendAmount);
+
+
+    //FOR LOOP
+
+    const envi = ["dev","test","stage","prod"];
+
+for (let x in envi) {
+    if(envi[x]=="dev")
+    {
+        sendAmount= amount + amount * 0.1;
+        console.log(sendAmount);
+    }
+    else if(envi[x]=="test")
+    {
+        sendAmount= amount + amount * 0.2;
+        console.log(sendAmount);
+    }
+
+    else if(envi[x]=="stage")
+    {
+        sendAmount= amount + amount * 0.3;
+        console.log(sendAmount);
+    }
+    else if(envi[x]=="prod")
+    {
+        sendAmount= amount + amount * 0.3;
+        console.log(sendAmount);
+    }
+    else 
+    {
+        console.log("No Increment!")
+    }
+    x++;
+}
+
+
+
+
 
     </Script>
 
