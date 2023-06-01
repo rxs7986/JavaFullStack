@@ -9,7 +9,6 @@
     <Script>
         var env = "test";
         var amount = 100;
-
         let sendAmount = 0;
 
 //SWITCH STATEMENT
@@ -82,37 +81,30 @@ switch(env) {
 
     const envi = ["dev","test","stage","prod"];
 
-for (let x in envi) {
-    if(envi[x]=="dev")
+  for( let i=0; i<=envi.length; i++)
+{
+    if(envi[i]=="dev")
     {
         sendAmount= amount + amount * 0.1;
         console.log(sendAmount);
     }
-    else if(envi[x]=="test")
+    else if(envi[i]=="test")
     {
         sendAmount= amount + amount * 0.2;
         console.log(sendAmount);
     }
 
-    else if(envi[x]=="stage")
+    else if(envi[i]=="stage")
     {
         sendAmount= amount + amount * 0.3;
         console.log(sendAmount);
     }
-    else if(envi[x]=="prod")
+    else if(envi[i]=="prod")
     {
-        sendAmount= amount + amount * 0.3;
+        sendAmount= amount + amount * 0.05;
         console.log(sendAmount);
     }
-    else 
-    {
-        console.log("No Increment!")
-    }
-    x++;
 }
-
-
-
 
 
     </Script>
