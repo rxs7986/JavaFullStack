@@ -1,0 +1,7 @@
+class Vehicle
+{
+    public void display()
+    {
+        System.out.println("I am driving a Vehicle");
+    }
+}
