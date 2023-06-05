@@ -58,46 +58,61 @@
 
 
 
-        // //DELETING FROM EXISTING HOBBIES
-        // function delHobbyFromScreen() {
-        //   const Hobby = prompt("Enter a hobby to delete:");
-        //   if (Hobby) {
-        //     h.pop(Hobby);
-        //     console.log("New hobby deleted successfully!");
-        //   } else {
-        //     console.log("No hobby entered.");
-        //   }
-        // }
-
-        // // Adding a new hobby from the screen
-        // delHobbyFromScreen();
-
-        // // Print the updated list of hobbies to the console
-        // console.log("My Updated Hobbies:");
-        // console.log(h);
-
-
+        /*deleting using findIndex*/
 
 
         function deleteHobbyFromScreen() {
-            const hobbyToDelete = prompt("Enter a hobby to delete:");
-            if (hobbyToDelete) {
-                const index = h.indexOf(hobbyToDelete);
-                if (index !== -1) {
-                    h.splice(index, 1);
-                    console.log(`Successfully deleted ${hobbyToDelete}`);
-                } else {
-                    console.log(`Hobby ${hobbyToDelete} not found`);
-                }
-            } else {
-                console.log("No hobby entered.");
-            }
-            // Print the updated list of hobbies to the console
-            console.log("My Hobbies: after deletion process");
+            let hobby = prompt("enter a hobby");
+
+            let index = h.findIndex(object => {
+
+                return object === hobby;
+
+            })
+
+            h.splice(index, 1);
             console.log(h);
             document.getElementById("demo").innerHTML = "The hobbies stored in array after deletion:-" + "<br>" + fun;
-
         }
+
+        // /*Deleting using filter() method*/
+        // function deleteHobbyFromScreen() {
+        //     let hobby = prompt("enter a hobby");
+        //     var b = h.filter(function (object) {
+        //         return object === hobby;
+
+        //     });
+        //     let y = b.splice(0, 1);// returns deleted hobby
+        //     console.log(y);
+
+
+
+
+        // }
+
+
+
+        /*Deleting using IndexOf*/
+
+        // function deleteHobbyFromScreen() {
+        //     const hobbyToDelete = prompt("Enter a hobby to delete:");
+        //     if (hobbyToDelete) {
+        //         const index = h.indexOf(hobbyToDelete);
+        //         if (index !== -1) {
+        //             h.splice(index, 1);
+        //             console.log(`Successfully deleted ${hobbyToDelete}`);
+        //         } else {
+        //             console.log(`Hobby ${hobbyToDelete} not found`);
+        //         }
+        //     } else {
+        //         console.log("No hobby entered.");
+        //     }
+        //     // Print the updated list of hobbies to the console
+        //     console.log("My Hobbies: after deletion process");
+        //     console.log(h);
+        //     document.getElementById("demo").innerHTML = "The hobbies stored in array after deletion:-" + "<br>" + fun;
+
+        // }
 
 
 
