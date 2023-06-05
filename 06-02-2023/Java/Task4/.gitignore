@@ -27,3 +27,16 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore compiled output and build files
+target/
+bin/
+build/
+
+# Ignore other non-Java files
+*.class
+*.jar
