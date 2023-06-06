@@ -59,7 +59,7 @@
         <button onclick="onSubmit()">Submit</button>
     </div>
 
-
+ <p id="result"></p>
 
 
 
@@ -70,6 +70,7 @@
 
     <script>
         function onSubmit() {
+            /* over ridden on page*/
             var x = document.getElementById("firstname").value;
             var y = document.getElementById("lastname").value;
             var z = document.getElementById("dob").value;
@@ -85,12 +86,17 @@
             document.getElementById("ans4").innerHTML = "Email: " + a;
             document.getElementById("ans5").innerHTML = "Phone Number: " + b;
 
-            for (let i = 0; i < c.length; i++) {
-                if (c[i].checked)
-                    document.getElementById("ans3").innerHTML
-                        = "Gender: " + c[i].value;
-            }
+            /* on the same page*/
 
+            // document.getElementById("result").innerHTML = "First Name: " + document.getElementById("firstname").value + "<br>" + "<br>"+
+            
+            // "Last Name: " + document.getElementById("lastname").value + "<br>"+ "<br>"+
+            // "Date of Birth: " +document.getElementById("dob").value + "<br>"+ "<br>"+
+            // "Gender: " +document.querySelector('input[name="gender"]:checked').value  + "<br>"+ "<br>"+
+            // "Email: " +document.getElementById("email").value + "<br>"+ "<br>"+
+            // "Telephone: " +document.getElementById("phn").value;
+
+           
             alert("Submitted Successfully!");
 
         }
