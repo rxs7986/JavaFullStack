@@ -35,12 +35,9 @@
         <b>Your Preferred Gender :</b>
 
         <br>
-        <input type="radio" id="m" name="male" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="f" name="female" value="Female">
-        <label for="Female">Female</label><br>
-        <input type="radio" id="Other" name="others" value="Other">
-        <label for="Other">Other</label>
+        <input type="radio" name="gender" value="Male">Male <br>
+        <input type="radio" name="gender" value="Female">Female <br>
+        <input type="radio" name="gender" value="Others">Others
         <br>
 
         <br> <br>
@@ -57,7 +54,14 @@
         <br> <br>
     </div>
     <br> <br>
-    <button onclick="onSubmit()">Submit</button>
+
+    <div>
+        <button onclick="onSubmit()">Submit</button>
+    </div>
+
+
+
+
 
 
 
@@ -71,14 +75,23 @@
             var z = document.getElementById("dob").value;
             var a = document.getElementById("email").value;
             var b = document.getElementById("phn").value;
-            var c = document.getElementById("f").value;
+            var c = document.querySelector('input[name="gender"]:checked').value;;
 
             document.getElementById("ans").innerHTML = "First Name: " + x;
             document.getElementById("ans1").innerHTML = "Last Name: " + y;
             document.getElementById("ans2").innerHTML = "DOB: " + z;
-            document.getElementById("ans3").innerHTML = "Gender: " + a;
-            document.getElementById("ans4").innerHTML = "Email: " + b;
-            document.getElementById("ans5").innerHTML = "Phone Number: " + c;
+            document.getElementById("ans3").innerHTML = "Gender: " + c;
+            //document.querySelector('input[name="gender"]:checked').value;
+            document.getElementById("ans4").innerHTML = "Email: " + a;
+            document.getElementById("ans5").innerHTML = "Phone Number: " + b;
+
+            for (let i = 0; i < c.length; i++) {
+                if (c[i].checked)
+                    document.getElementById("ans3").innerHTML
+                        = "Gender: " + c[i].value;
+            }
+
+            alert("Submitted Successfully!");
 
         }
     </script>
