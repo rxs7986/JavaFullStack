@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>User Details</title>
+    <h1 style="color: brown;"> <u>Submit Your Profile Details</u></h1>
+    <br>
+
+
+</head>
+
+<body>
+    <!-- <form id="frm1" action="/action_page.php"> -->
+    <div id="ans">
+        <b>First Name:</b> <input type="text" id="firstname" name="fname" placeholder="Please enter your first name"
+            style="width:300px;" />
+        <br> <br>
+    </div>
+
+    <div id="ans1">
+        <b>Last Name: </b><input type="text" id="lastname" name="lname" placeholder="Please enter your last name"
+            style="width:300px;" />
+        <br> <br>
+    </div>
+
+    <div id="ans2">
+        <b>DOB:</b> <input type="date" id="dob" name="DOB" placeholder="Please enter your date of birth"
+            style=" width:300px;" />
+        <br> <br>
+    </div>
+
+
+    <div id="ans3">
+        <b>Your Preferred Gender :</b>
+
+        <br>
+        <input type="radio" id="m" name="male" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="f" name="female" value="Female">
+        <label for="Female">Female</label><br>
+        <input type="radio" id="Other" name="others" value="Other">
+        <label for="Other">Other</label>
+        <br>
+
+        <br> <br>
+    </div>
+    <div id="ans4">
+        <b>Email:</b> <input type="email" id="email" name="email" placeholder="Please enter valid email address"
+            style=" width:300px;" />
+        <br> <br>
+    </div>
+
+    <div id="ans5">
+        <b>Mobile No:</b> <input type="tel" id="phn" name="phone" placeholder="Please enter 10 digit phone number"
+            style=" width:300px;" />
+        <br> <br>
+    </div>
+    <br> <br>
+    <button onclick="onSubmit()">Submit</button>
+
+
+
+    <!-- 
+    </form> -->
+
+    <script>
+        function onSubmit() {
+            var x = document.getElementById("firstname").value;
+            var y = document.getElementById("lastname").value;
+            var z = document.getElementById("dob").value;
+            var a = document.getElementById("email").value;
+            var b = document.getElementById("phn").value;
+            var c = document.getElementById("f").value;
+
+            document.getElementById("ans").innerHTML = "First Name: " + x;
+            document.getElementById("ans1").innerHTML = "Last Name: " + y;
+            document.getElementById("ans2").innerHTML = "DOB: " + z;
+            document.getElementById("ans3").innerHTML = "Gender: " + a;
+            document.getElementById("ans4").innerHTML = "Email: " + b;
+            document.getElementById("ans5").innerHTML = "Phone Number: " + c;
+
+        }
+    </script>
+
+</body>
+
+</html>

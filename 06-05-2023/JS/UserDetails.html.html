@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>User Details</title>
+    <h1 style="color: brown;"> <u>Submit Your Profile Details</u></h1>
+    <br>
+    
+
+</head>
+
+<body>
+    <!-- <form id="frm1" action="/action_page.php"> -->
+        <div id="ans">
+        <b>First Name:</b> <input type="text" id="firstname" name="fname" placeholder="Please enter your first name"
+            style="width:300px;" />
+        <br> <br>
+    </div>
+
+    <div id="ans1">
+        <b>Last Name: </b><input type="text" id="lastname" name="lname" placeholder="Please enter your last name"
+        style="width:300px;" />
+    <br> <br>
+
+    <b>DOB:</b> <input type="date" id="dob" name="DOB" placeholder="Please enter your date of birth" style=" width:300px;" />
+    <br> <br>
+</div>
+        
+
+        <b>Your Preferred Gender :</b>
+
+        <br>
+        <input type="radio" id="m" name="male" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="f" name="female" value="Female">
+        <label for="Female">Female</label><br>
+        <input type="radio" id="Other" name="others" value="Other">
+        <label for="Other">Other</label>
+        <br>
+
+        <br> <br>
+        <b>Email:</b> <input type="email" id="email" name="email" placeholder="Please enter valid email address"
+            style=" width:300px;" />
+        <br> <br>
+        <b>Mobile No:</b> <input type="tel" id=phn" name="phone" placeholder="Please enter 10 digit phone number"
+            style=" width:300px;" />
+        <br> <br>
+        <button onclick="onSubmit()" style="align-items: center;">Submit</button>
+        
+
+         
+<!-- 
+    </form> -->
+
+    <script>
+        function onSubmit() {
+            var x = document.getElementById("firstname").value;
+            var y = document.getElementById("lastname").value;
+
+            document.getElementById("ans").innerHTML = "First Name:" +x ;
+            document.getElementById("ans1").innerHTML = "Last Name:" +y;
+
+        }
+    </script>
+
+</body>
+
+</html>
