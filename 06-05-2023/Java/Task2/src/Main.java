@@ -1,5 +1,5 @@
 class Person {
-    int age = 15;
+    int age = 20;
   public void getAgeCategory() {
       if (age > 13 && age <= 19) {
           System.out.println("Teen");
@@ -7,6 +7,9 @@ class Person {
           System.out.println("Kid");
       } else if (age > 19) {
           System.out.println("Adult");
+      }
+      else {
+          System.out.println("Invalid Age");
       }
   }
 

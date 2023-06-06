@@ -15,7 +15,7 @@ public class Main {
 
         }
 
-        System.out.println("Reversed Number is:" +rev);
+        System.out.println("Reversed Number is: " +rev);
 
 
 
