@@ -41,16 +41,17 @@
 
             Hobbies:
             <br>
-            <input type="checkbox" id="cooking"  value="Cooking">
+            <input type="checkbox" id="cooking" name="hobbies" value="Cooking">
             <label for="cooking">I like Cooking</label><br>
-            <input type="checkbox" id="writing"  value="Writing">
+            <input type="checkbox" id="writing" name="hobbies" value="Writing">
             <label for="writing">I like Writing</label><br>
-            <input type="checkbox" id="painting"  value="Painting">
+            <input type="checkbox" id="painting" name="hobbies" value="Painting">
             <label for="painting">I like Painting</label><br>
             <br><br>
         </fieldset>
         
     </form>
+    <br>
     <button onclick="Submit()">Submit</button>
     
 
@@ -58,19 +59,28 @@
     <p id="result"></p>
 
 
-
-
-
-
     <script>
         function Submit() {
+
+            var checkboxes = document.getElementsByName("hobbies");
+  var selectedHobbies = [];
+  for (var i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      selectedHobbies.push(checkboxes[i].value);
+    }
+}
+  
+  let x = selectedHobbies.join(", ");
+
             document.getElementById("result").innerHTML =
                 "First Name: " + document.getElementById("fname").value + "<br><br>" +
                 "Last Name: " + document.getElementById("lname").value + "<br><br>" +
                 "Date of Birth: " + document.getElementById("dob").value + "<br><br>" +
                 "Gender: " + document.querySelector('input[name="gender"]:checked').value + "<br><br>" +
                 "Email: " + document.getElementById("email").value + "<br><br>" +
-                "Telephone: " + document.getElementById("phn").value;
+                "Telephone: " + document.getElementById("phn").value + "<br><br>" +
+                "Hobbies: " + x;
+
         }
     </script>
 </body>
