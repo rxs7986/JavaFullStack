@@ -24,7 +24,6 @@ public class Main {
             arr[j] = f;
         }
 
-        System.out.println();
 
         System.out.println("Array after left rotation by x position: ");
         for(int i=0; i<arr.length;i++)
