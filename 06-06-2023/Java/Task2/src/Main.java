@@ -2,20 +2,19 @@
 
 public class Main {
     public static void main(String[] args) {
-
-        char[] arr = {'r','a','c','h'};
-
-        System.out.println("The elements in array are: ");
-        for (int i=0; i<arr.length;i++)
-        {
-            System.out.println(arr[i]);
+        int n = 4;
+        int[] b = new int[4];
+        int j = n;
+        int a[] = {1,2,3,4};
+        for (int i = 0; i < n; i++) {
+            b[j - 1] = a[i];
+            j = j - 1;
         }
 
-        System.out.println("Printing the array elements in the reverse order: ");
-
-        for (int i= arr.length-1; i>=0; i--)
-        {
-            System.out.println(arr[i]);
+        // printing the reversed array
+        System.out.println("Reversed array is: \n");
+        for (int k = 0; k < n; k++) {
+            System.out.println(b[k]);
         }
     }
 }
