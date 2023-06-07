@@ -49,11 +49,11 @@
             <label for="painting">I like Painting</label><br>
             <br><br>
         </fieldset>
-        
+
     </form>
     <br>
     <button onclick="Submit()">Submit</button>
-    
+
 
     <h2>Form Values</h2>
     <p id="result"></p>
@@ -63,14 +63,14 @@
         function Submit() {
 
             var checkboxes = document.getElementsByName("hobbies");
-  var selectedHobbies = [];
-  for (var i = 0; i < checkboxes.length; i++) {
-    if (checkboxes[i].checked) {
-      selectedHobbies.push(checkboxes[i].value);
-    }
-}
-  
-  let x = selectedHobbies.join(", ");
+            var selectedHobbies = [];
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    selectedHobbies.push(checkboxes[i].value);
+                }
+            }
+
+            let x = selectedHobbies.join(", ");
 
             document.getElementById("result").innerHTML =
                 "First Name: " + document.getElementById("fname").value + "<br><br>" +
