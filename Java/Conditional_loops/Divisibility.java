@@ -1,6 +1,6 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Main {
+public class Divisibility {
     public static void main(String[] args) {
         for (int i = 0; i <= 100; i++) {
             if (i % 3 == 0 && i % 5 == 0) {

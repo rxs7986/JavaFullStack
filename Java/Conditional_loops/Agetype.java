@@ -16,7 +16,7 @@ class Person {
 }
 
 
-public class Main {
+public class Agetype {
 
     public static void main(String[] args)
     {

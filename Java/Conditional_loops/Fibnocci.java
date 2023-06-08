@@ -1,6 +1,6 @@
 
 
-public class Main {
+public class Fibonocci {
     public static void main(String[] args) {
         int f1 = 0;
         int f2 = 1;

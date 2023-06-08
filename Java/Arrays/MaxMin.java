@@ -1,5 +1,5 @@
 
-public class Main {
+public class MaxMin {
     public static void main(String[] args) {
 //
 //        int arr[]; //initialization
