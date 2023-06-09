@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <h1>Javascript Prototype</h1>
+</head>
+<body>
+    <script>
+        const  arr =  [5,3,4,1];
+        
+        Array.prototype.sortArr = function()
+        {
+              arr.sort();
+              return arr[1];
+        }
+
+        console.log("The second smallest number in array is: "+arr.sortArr());
+     
+
+
+
+
+    </script>
+</body>
+</html>
