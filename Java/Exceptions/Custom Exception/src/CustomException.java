@@ -1,6 +1,6 @@
-public class CustomException extends RuntimeException{
-    @Override
-    public String toString() {
-        return "In custom Exception ";
-    }
+public class CustomException extends RuntimeException {
+//    @Override
+//    public String toString() {
+//        return "In custom Exception ";
+//    }
 }
