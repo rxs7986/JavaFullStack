@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+  <div class ="nav">
+    
+<ul>
+  <li><a href="#profile">Profile</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><input type="search" placeholder="Search.."></li>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <button type="submit"><i class="fa fa-search"></i></button>
+
+  <button type = "onsubmit" (click)="toggleLogin()">
+    {{ isLoggedIn ? 'Logout' : 'Login' }}
+  </button>
+
+  
+</ul>
+</div>
+
+</body>
+</html>
+
+
