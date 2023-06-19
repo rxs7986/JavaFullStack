@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
   toggleLogin() 
   {
     this.isLoggedIn = !this.isLoggedIn;
+    
   }
 
 }
