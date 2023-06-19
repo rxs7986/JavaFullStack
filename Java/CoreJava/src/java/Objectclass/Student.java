@@ -1,4 +1,4 @@
-package Week1.Day1_ObjectClass;
+package java.Objectclass;
 
 public class Student {
     private String Name;
