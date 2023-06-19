@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Information</title>
+  </head>
+  <body>
+    <h2>PROFILE INFO</h2>
+      <div>
+
+      FirstName <input type="text" id="fname" placeholder="please enter your first name" [(ngModel)]="fname"/>
+      <br/>
+      LastName: <input type="text" id="lname" placeholder="please enter your last name" [(ngModel)]="lname"/>
+      <br/>
+      DOB: <input type="date" id="dob" placeholder="please enter your date of birth" [(ngModel)]="dob"/>
+      <br/>
+      Phone: <input type="phone" id="phone" placeholder="please enter your birthdate" [(ngModel)]="phone"/>
+      <br/>
+      Email: <input type="email" id="email" placeholder="please enter valid email" [(ngModel)]="email"/>
+      <br/> <br/>
+      <button type ="submit" (click) = "showInfo()">Submit</button>
+     
+      </div>
+
+
+      
+      <div *ngIf ="state">
+        <p>
+        FirstName: {{fname}} <br/>
+        LastName: {{lname}}<br/>
+        DOB: {{dob}} <br/>
+        Phone: {{phone}} <br/>
+        Email: {{email}} <br/>
+        </p>
+      </div>
+
+    <!-- <div>
+      <p>FirstName: {{pro.fname}} <br/>
+        LastName: {{pro.lname}} <br/>
+        DOB: {{pro.dob}}<br/>
+        Phone: {{pro.phone}}<br/>
+        University: {{pro.university}} <br/>
+        Undergrad: {{pro.undergrad}}
+      </p>
+      
+    </div> -->
+
+
+  </body>
+</html>
