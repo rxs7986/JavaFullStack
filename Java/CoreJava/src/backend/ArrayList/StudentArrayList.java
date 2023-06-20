@@ -27,15 +27,17 @@ public class StudentArrayList {
 
 
         double totalGpa = 0.0;
-        for (Student student : students) {
-            totalGpa += student.getGpa();
+        for (int i = 0; i < students.size(); i++) {
+            Student student = students.get(i);
+            totalGpa = totalGpa + student.getGpa();
         }
 
         double averageGpa = totalGpa / students.size();
 
         ArrayList<Student> remStudents = new ArrayList<>();
 
-        for (Student student : students) {
+        for (int i = 0; i < students.size(); i++) {
+            Student student = students.get(i);
             if (student.getGpa() >= averageGpa) {
                 remStudents.add(student);
             }
