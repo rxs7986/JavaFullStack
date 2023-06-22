@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './Login/Login.component';
 import { SignupComponent } from './Signup/Signup.component';
 import { ProfileComponent } from './Profile/Profile.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [ 
  { path : 'login',
@@ -12,7 +13,12 @@ const routes: Routes = [
   component: SignupComponent},
 
   {path: 'profile',
-  component: ProfileComponent}
+  component: ProfileComponent},
+
+  {path:'header',
+  component: HeaderComponent}
+
+  
 
 
 

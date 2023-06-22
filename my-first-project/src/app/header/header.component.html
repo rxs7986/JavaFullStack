@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
-  <div class ="nav">
+<body style="background-color: bisque;">
+  
+  <div class="nav">
+
+
     
-<!-- <ul>
+
+
+    <!-- <ul>
   <li><a href="#profile">Profile</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><input type="search" placeholder="Search.."></li> -->
-  
 
-  <button type="submit"><i class="fa fa-search"></i></button>
 
-  <button type = "onsubmit" (click)="toggleLogin()">
+
+
+    <!-- <button type = "onsubmit" (click)="toggleLogin()">
     {{ isLoggedIn ? 'Logout' : 'Login' }}
-  </button>
+  </button> -->
 
+
+    <!-- </ul> -->
+
+
+    <ul>
+
+      <li> <a routerLink="/signup">SIGNUP</a></li>
+      <li> <a routerLink="/login">LOGIN</a></li>
+      <!-- <li> <a routerLink="/profile">Profile</a></li> -->
+      <li> <button type="submit"><i class="fa fa-search"></i></button> </li>
+      <li><input type="search" placeholder="Search.."></li>
+
+    </ul> 
   
-<!-- </ul> -->
+  </div>
 
+  <div>
+  <h1 style="text-align: center;">Rachana Sanda</h1>
+    <br />
+    <br />
+    
+    <img src="assets\rach_pic.jpeg" alt="Rachana Profile Picture"  />
+    <br />
 
-<ul>
-  <li> <a routerLink = "/login">Login</a></li>
-  <li> <a routerLink="/signup">Signup</a></li>
-  <li> <a routerLink="/profile">Profile</a></li>
-</ul>
-</div>
+    <h2 style="text-align: center;"> <i>Hello User! <br />
+        Welcome to my first angular app.<br />
+
+      </i>
+    </h2>
+  </div>
 
 </body>
+
 </html>
-
-

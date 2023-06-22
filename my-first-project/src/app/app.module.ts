@@ -9,16 +9,18 @@ import { LoginComponent } from './Login/Login.component';
 import { SignupComponent } from './Signup/Signup.component';
 import { ProfileComponent } from './Profile/Profile.component';
 import { FormsModule } from '@angular/forms';
+import { AccountsInfoComponent } from './accounts-info/accounts-info.component';
 
 
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
     HeaderComponent,
       NavBarComponent,
       LoginComponent,
       SignupComponent,
-      ProfileComponent
+      ProfileComponent,
+      AccountsInfoComponent
    ],
   imports: [
     BrowserModule,

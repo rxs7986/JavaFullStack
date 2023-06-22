@@ -10,7 +10,7 @@ ul {
   
   li a {
     display: block;
-    float: left;
+    float: right;
     padding: 14px 16px;
     text-decoration: none;
     color: white;
@@ -23,13 +23,13 @@ ul {
     padding: 4px;
     font-size: 17px;
     border: 1px solid grey;
-    float: left;
+    float: right;
     width: 15%;
     background: #f1f1f1;
   }
 
   .nav button[type =submit] {
-    float: left;
+    float: right;
     width: 5%;
     padding: 4px;
     background: #2196F3;
@@ -55,3 +55,35 @@ ul {
 
 
 
+  
+  
+/* body {
+    background-color: burlywood;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+   */
+
+   img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-image: url('src/assets/rach_pic.jpeg');
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+    
+    
+     
+   
+      /* max-width: 100%;
+      max-height: 100%; */
+    
+    
+   }
+   
+   
+  

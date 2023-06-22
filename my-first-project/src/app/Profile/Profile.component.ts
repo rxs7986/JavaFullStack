@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-Profile',
@@ -16,29 +17,54 @@ export class ProfileComponent implements OnInit {
     
   
      state = false;
+     logout = false;
 
-  // pro = {
-  //   fname: "Rachana",
-  //   lname:"Sanda",
-  //   dob:"01-08-1999",
-  //   phone: 8179142734,
-  //   university:"UTA",
-  //   undergrad:"Stanley"
-  // }
+
+
+
+  
+
+
+
+
+    
+
+  pro = {
+    fname: "Rachana",
+    lname:"Sanda",
+    dob:"01-08-1999",
+    phone: 8179142734,
+    university:"UTA",
+    undergrad:"Stanley"
+  }
 
  
 
   showInfo()
   {
     this.state = true;
+
   }
+ 
   
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  isLoggedOut()
+  {
+    
+    this.router.navigate(['/header']);
+    alert("Loggedout Successfully!")
+    console.log("Loggedout Successfully!");
+    
+
+  }
+
  
+
+   
 
 
    
