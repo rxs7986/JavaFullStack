@@ -12,15 +12,17 @@ import { FormsModule } from '@angular/forms';
 import { AccountsInfoComponent } from './accounts-info/accounts-info.component';
 
 
+
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
     HeaderComponent,
       NavBarComponent,
       LoginComponent,
       SignupComponent,
       ProfileComponent,
-      AccountsInfoComponent
+      AccountsInfoComponent,
+     
    ],
   imports: [
     BrowserModule,

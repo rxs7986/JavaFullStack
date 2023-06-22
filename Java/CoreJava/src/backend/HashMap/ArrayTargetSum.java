@@ -1,21 +1,29 @@
 package backend.HashMap;
 
+import java.util.HashMap;
+
 public class ArrayTargetSum {
 
-    public static void main (String args[])
-    {
-        int[] arr = {10,20,30,40,50,60};
-        int target = 50;
+    public static void TargetSum(int[] arr) {
+        int target = 100;
 
-        for (int i=0; i< arr.length;i++)
-        {
-            for(int j=i+1;j<arr.length;j++)
-            {
-                if(arr[i]+arr[j] == target)
-                {
-                   System.out.println("firstno: " + i + "secondno: " +j +arr[i] + arr[j]);
-                }
+        HashMap<Integer, Integer> indices = new HashMap<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            int complement = target - arr[i];
+
+            if (indices.containsKey(complement)) {
+                int complementIndex = indices.get(complement);
+                System.out.println("Indices: " + complementIndex + ", " + i);
+                System.out.println("Values: " + complement + ", " + arr[i]);
             }
+
+            indices.put(arr[i], i);
         }
+    }
+
+    public static void main(String args[]) {
+        int[] arr1 = {10, 20, 30, 40, 50, 60};
+        TargetSum(arr1);
     }
 }
