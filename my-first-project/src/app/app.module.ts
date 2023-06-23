@@ -10,11 +10,13 @@ import { SignupComponent } from './Signup/Signup.component';
 import { ProfileComponent } from './Profile/Profile.component';
 import { FormsModule } from '@angular/forms';
 import { AccountsInfoComponent } from './accounts-info/accounts-info.component';
+import { AuthComponent } from './auth/auth.component';
+import { SharedComponent } from './shared/shared.component';
 
 
 
 @NgModule({
-  declarations: [					
+  declarations: [							
     AppComponent,
     HeaderComponent,
       NavBarComponent,
@@ -22,7 +24,8 @@ import { AccountsInfoComponent } from './accounts-info/accounts-info.component';
       SignupComponent,
       ProfileComponent,
       AccountsInfoComponent,
-     
+      AuthComponent,
+      SharedComponent
    ],
   imports: [
     BrowserModule,

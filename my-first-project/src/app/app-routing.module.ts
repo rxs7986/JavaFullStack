@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'profile',
   component: ProfileComponent},
 
-  {path:'header',
+  {path:'',
   component: HeaderComponent}
 
   

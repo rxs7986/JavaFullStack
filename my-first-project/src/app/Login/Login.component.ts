@@ -17,8 +17,7 @@ export class LoginComponent implements OnInit {
   password:string = '';
 
  
-
-
+ 
  Submit()
   {
    console.log("Email is: " +this.email)
