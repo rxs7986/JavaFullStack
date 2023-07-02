@@ -1,4 +1,4 @@
-package backend.Abstraction;
+package main.java.backend.Abstraction;
 
 public class Main {
     public static void main(String[] args) {

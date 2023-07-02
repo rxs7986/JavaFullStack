@@ -1,4 +1,4 @@
-package backend.Runtime_Polymorphism;
+package main.java.backend.Runtime_Polymorphism;
 
 class Vehicle
 {

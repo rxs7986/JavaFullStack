@@ -1,4 +1,4 @@
-package backend.Threads;
+package main.java.backend.Threads;
 
 public class Deadlock {
     public static void main(String[] args){

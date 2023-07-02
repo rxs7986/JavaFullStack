@@ -1,4 +1,4 @@
-package backend.Exceptions;
+package main.java.backend.Exceptions;
 
 import java.lang.Integer;
 import java.lang.Exception;

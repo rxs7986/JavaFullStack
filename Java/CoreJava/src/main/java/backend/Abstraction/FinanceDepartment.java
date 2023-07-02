@@ -1,4 +1,4 @@
-package backend.Abstraction;
+package main.java.backend.Abstraction;
 
 public class FinanceDepartment extends Department {
     private int departmentSize;

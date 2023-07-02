@@ -1,4 +1,4 @@
-package main.java.backend.Interface_Implementaion;
+package backend.Interface_Implementaion;
 
 interface Interface1
         {

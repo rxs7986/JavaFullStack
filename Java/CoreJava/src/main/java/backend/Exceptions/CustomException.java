@@ -1,4 +1,4 @@
-package backend.Exceptions;
+package main.java.backend.Exceptions;
 
 public class CustomException extends RuntimeException {
 //    @Override
