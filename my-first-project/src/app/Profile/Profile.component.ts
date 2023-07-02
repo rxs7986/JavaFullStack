@@ -55,7 +55,7 @@ export class ProfileComponent implements OnInit {
   isLoggedOut()
   {
     
-    this.router.navigate(['/header']);
+    this.router.navigate(['/']);
     alert("Loggedout Successfully!")
     console.log("Loggedout Successfully!");
     

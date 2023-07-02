@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,13 +11,13 @@ import { SignupComponent } from './Signup/Signup.component';
 import { ProfileComponent } from './Profile/Profile.component';
 import { FormsModule } from '@angular/forms';
 import { AccountsInfoComponent } from './accounts-info/accounts-info.component';
-import { AuthComponent } from './auth/auth.component';
-import { SharedComponent } from './shared/shared.component';
+import { BheaderComponent } from './Bheader/Bheader.component';
+
 
 
 
 @NgModule({
-  declarations: [							
+  declarations: [								
     AppComponent,
     HeaderComponent,
       NavBarComponent,
@@ -24,13 +25,12 @@ import { SharedComponent } from './shared/shared.component';
       SignupComponent,
       ProfileComponent,
       AccountsInfoComponent,
-      AuthComponent,
-      SharedComponent
+      BheaderComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

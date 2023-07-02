@@ -2,6 +2,8 @@ package backend.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 
 public class TraverseArrayList {
@@ -12,7 +14,6 @@ public class TraverseArrayList {
         str.add("Rachana");
         str.add("Sanda");
         str.add("Master's Student from UTA");
-
 
         //For Loop
         System.out.println("Using forLoop: ");
