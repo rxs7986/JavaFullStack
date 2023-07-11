@@ -11,22 +11,24 @@ import { NavBarComponent } from './NavBar/NavBar.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './Home/Home.component';
 import { FormsModule } from '@angular/forms';
+import { SubmissionsComponent } from './Submissions/Submissions.component';
+
 
 
 
 @NgModule({
-  declarations: [							
+  declarations: [									
     AppComponent,
       LoginComponent,
       ProfileComponent,
       NavBarComponent,
       HeaderComponent,
       HomeComponent,
+      SubmissionsComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     FormsModule
    
   ],

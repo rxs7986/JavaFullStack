@@ -1,0 +1,114 @@
+<nav class="navbar bg-primary" data-bs-theme="dark">
+  <!-- <ul class="nav vertical-dropdown mx-2">
+    <li class="nav-item">
+      <button type="button" class="btn btn-info d-flex mx-2" (click)="Submission()" [(ngModel)]="isSubmitted">Submissions
+      </button>
+    </li> -->
+
+<ul  class="nav vertical-dropdown">
+
+  <div class="col">
+    <div class="p-3">
+      <div class="dropdown-center">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          {{ 'Leads'}}
+        </button>
+        <ul class="dropdown-menu" >
+          <li><a class="dropdown-item" href="#">Jagdishwar</a></li>
+      <li><a class="dropdown-item" href="#">Manohar</a></li>
+      <li><a class="dropdown-item" href="#">Spandana</a></li>
+     
+        </ul>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="col">
+      <div class="p-3">
+        <div class="dropdown-center">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            {{ 'Technology'}}
+          </button>
+          <ul class="dropdown-menu" >
+            <li><a class="dropdown-item" href="#">Java</a></li>
+        <li><a class="dropdown-item" href="#">Salesforce</a></li>
+        <li><a class="dropdown-item" href="#">DevOps</a></li>
+       
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </ul>
+</nav>
+
+
+
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">SerialNo:</th>
+      <th scope="col">Date</th>
+      <th scope="col">Vendor Name</th>
+      <th scope="col">Client</th>
+      <th scope="col">Email</th>
+      <th scope="col">Location</th>
+      <th scope="col">Payrate</th>
+      <th scope="col">Lead</th>
+      <th scope="col">Technology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>6/05/2023</td>
+      <td>Vendor1</td>
+      <td>Wallmart</td>
+      <td>vendor1@wallmart.com</td>
+      <td>Dallas, TX</td>
+      <td>$78/hr</td>
+      <td>Jagdishwar</td>
+      <td>Java</td>
+      <td>
+        <button class="btn btn-primary btn-edit mx-2">Edit</button>
+        <button class="btn btn-danger btn-delete">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>6/05/2023</td>
+      <td>Vendor2</td>
+      <td>Wallgreens</td>
+      <td>vendor2@wallagreens.com</td>
+      <td>Atlanta, GA</td>
+      <td>$68/hr</td>
+      <td>Spandana</td>
+      <td>Salesforce</td>
+      <td>
+        <button class="btn btn-primary btn-edit mx-2">Edit</button>
+        <button class="btn btn-danger btn-delete">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>6/05/2023</td>
+      <td>Vendor3</td>
+      <td>CVS</td>
+      <td>vendor3@cvs.com</td>
+      <td>Tampa, FL</td>
+      <td>$65/hr</td>
+      <td>Manohar</td>
+      <td>DevOps</td>
+      <td>
+        <button class="btn btn-primary btn-edit mx-2">Edit</button>
+        <button class="btn btn-danger btn-delete">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
