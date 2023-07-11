@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile Information</title>
+  </head>
+  <body>
+    <h2>PROFILE INFO</h2>
+    <!-- <h3>Rachana Sanda</h3> -->
+    <!-- <form>
+     
+
+      FirstName <input type="text" id="fname"  [(ngModel)]="fname" [ngModelOptions]="{standalone: true}"  placeholder="please enter your first name"/>
+      <br/>
+      LastName: <input type="text" id="lname" placeholder="please enter your last name" [(ngModel)]="lname" [ngModelOptions]="{standalone: true}" />
+      <br/>
+      DOB: <input type="date" id="dob" placeholder="please enter your date of birth" [(ngModel)]="dob"  [ngModelOptions]="{standalone: true}" /> 
+      <br/>
+      Phone: <input type="phone" id="phone" placeholder="please enter your birthdate" [(ngModel)]="phone"  [ngModelOptions]="{standalone: true}" />
+      <br/>
+      Email: <input type="email" id="email" placeholder="please enter valid email" [(ngModel)]="email"  [ngModelOptions]="{standalone: true}" />
+      <br/> <br/>
+     
+    
+      
+    </form>
+
+
+      
+      <div *ngIf ="state">
+        <p>
+        FirstName: {{fname}} <br/>
+        LastName: {{lname}}<br/>
+        DOB: {{dob}} <br/>
+        Phone: {{phone}} <br/>
+        Email: {{email}} <br/>
+        </p>
+      </div> -->
+
+    <div>
+      <p>Name: {{pro.fname}} {{pro.lname}} <br/>
+       
+        DOB: {{pro.dob}}<br/>
+        Phone: {{pro.phone}}<br/>
+        University: {{pro.university}} <br/>
+        Undergrad: {{pro.undergrad}}
+      </p>
+      
+      <br/> <br/>
+
+      <button type="button" (click) = "isLoggedOut()">Logout</button>
+    </div>
+
+
+
+  <app-accounts-info></app-accounts-info>
+
+
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h3> Send Amount Calculator With Possible Conditional Statements</h3>
+    <p id="demo"></p>
+   
+    <Script>
+        var env = "test";
+        var amount = 100;
+        let sendAmount = 0;
+
+//SWITCH STATEMENT
+switch(env) {
+  case "dev":
+     sendAmount= amount + amount * 0.1;
+    
+    // document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
+    break;
+  case "test":
+    sendAmount= amount + amount * 0.2;
+
+   // document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
+    break;
+  case "stage":
+    sendAmount= amount + amount * 0.3;
+    
+    //document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
+    break;
+ case "prod":
+    sendAmount= amount + amount * 0.05;
+   
+    //document.getElementById("demo").innerHTML =  "The total sending amount is:" +sendAmount;
+    break;
+  default:
+    console.log("No Increment");
+    document.getElementById("demo").innerHTML =  "The total sending amount with no increment is:" +sendAmount;
+    
+}
+console.log("Output with Switch case: "+sendAmount);
+document.getElementById("demo").innerHTML = " Given Envinorment: " +env +"<br>"+ " Amount: "+amount +"<br>"+" The total sending amount is: " +sendAmount;
+
+//IF ELSE STATEMENT
+     if(env == "dev")
+     {
+     sendAmount= amount + amount * 0.1;
+    
+     }
+
+     else if(env == "test")
+     {
+    sendAmount= amount + amount * 0.2;
+
+     }
+
+     else if(env == "stage")
+     {
+    sendAmount= amount + amount * 0.3;
+     }
+
+     else if(env == "prod")
+     {
+    sendAmount= amount + amount * 0.05;
+     }
+
+     else{
+        console.log("No Increment");
+        document.getElementById("demo").innerHTML =  "The total sending amount with no increment is:" *sendAmount;
+     }
+     console.log("Output with if-else: "+sendAmount);
+     //document.getElementById("demo").innerHTML = "Environment:" +env + "Amount given:"+amount + "The total sending amount is:" +sendAmount;
+
+
+     //TERNARY OPERATOR
+     env == "dev" ? sendAmount= amount + amount * 0.1 : env == "test" ? sendAmount= amount + amount * 0.2 : env == "stage" ? sendAmount= amount + amount * 0.3 :
+     env == "prod" ? sendAmount= amount + amount * 0.05 : console.log("No Increment");
+     console.log("Output with Ternary Operator: "+sendAmount);
+
+
+    //FOR LOOP
+
+    const envi = ["dev","test","stage","prod"];
+    console.log("Displaying the increment amount for the given:-");
+  for( let i=0; i<=envi.length; i++)
+{
+    if(envi[i]=="dev")
+    {
+        sendAmount= amount + amount * 0.1;  
+    }
+    else if(envi[i]=="test")
+    {
+        sendAmount= amount + amount * 0.2;
+    }
+
+    else if(envi[i]=="stage")
+    {
+        sendAmount= amount + amount * 0.3;
+    }
+    else if(envi[i]=="prod")
+    {
+        sendAmount= amount + amount * 0.05;  
+    }
+    console.log(envi[i]+ ":" +sendAmount);
+}
+
+
+    </Script>
+
+</body>
+</html>

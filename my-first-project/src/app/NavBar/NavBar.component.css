@@ -1,0 +1,41 @@
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .nav li a {
+    display: block;
+    width: 60px;
+    background-color: black;
+    padding: 20px 16px;
+    color: white;
+    text-decoration: none;
+  }
+  
+ 
+
+
+.nav input[type=search] {
+    padding: 4px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 15%;
+    background: #f1f1f1;
+  }
+
+  .nav button[type =submit] {
+    float: left;
+    width: 5%;
+    padding: 4px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-right: none;
+    cursor: pointer;
+    
+  }
