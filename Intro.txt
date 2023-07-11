@@ -1,8 +1,0 @@
-Hello. This is Rachana Sanda. I am currently working at ABC and have 9+ years of professional experience in Full stack engineering including testing, maintenance, and production support as well.
-
-Being a full-stack developer, I developed several enterprise-level applications. I was majorly responsible for building backend functionalities using Java. 
-Throughout my career, I was fortunate enough to have my hands on multiple front-end and back-end technologies.
-
-In front-end, I worked on HTML, CSS, javascript, JSP, and typescript along with other frameworks.
-And in the backend, I worked on Java8, J2EE, spring, and Boot.  Moreover, I was also involved in setting up infrastructure for hoisting applications on lower & higher environments and deploying operations with the help of Kubernetes, docker and sometimes aws based on the project.
-Lastly, occasionally I also participated in resolving production bugs via troubleshooting.
