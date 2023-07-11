@@ -1,0 +1,23 @@
+Unit testing
+
+//set up data
+// invoke methods
+//
+
+
+
+
+assertions w/ JUnit Library
+-add dependancy - spring boot starter-test
+matching what you are expecting (value) with the returning result
+assertEquals(expected, actul) - 2 args
+
+-beforeEach
+-beforeAll-
+-afterEach
+-aftterAll
+
+
+
+Mockito
+-mock dependancies
