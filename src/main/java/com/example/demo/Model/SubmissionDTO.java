@@ -3,7 +3,7 @@ package com.example.demo.Model;
 import lombok.Data;
 
 @Data
-public class SubmissionsModel {
+public class SubmissionDTO {
 
 
     private  String id;

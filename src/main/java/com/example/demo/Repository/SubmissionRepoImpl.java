@@ -1,7 +1,7 @@
 package com.example.demo.Repository;
 
 
-import com.example.demo.Model.SubmissionsModel;
+import com.example.demo.Model.SubmissionDTO;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
@@ -10,23 +10,23 @@ import java.util.*;
 @Repository
 public class SubmissionRepoImpl implements SubmissionsRepo{
 
-    HashMap<String, SubmissionsModel> submissionsMap = new HashMap<>();
+    HashMap<String, SubmissionDTO> submissionsMap = new HashMap<>();
     @Override
-    public List<SubmissionsModel> getAll() {
-        List<SubmissionsModel> valuesList = new ArrayList<>();
-        for (Map.Entry<String, SubmissionsModel> entry : submissionsMap.entrySet()) {
+    public List<SubmissionDTO> getAll() {
+        List<SubmissionDTO> valuesList = new ArrayList<>();
+        for (Map.Entry<String, SubmissionDTO> entry : submissionsMap.entrySet()) {
             valuesList.add(entry.getValue());
         }
         return valuesList;
     }
 
     @Override
-    public SubmissionsModel getSubmissionById(String id) {
+    public SubmissionDTO getSubmissionById(String id) {
        return submissionsMap.get(id);
     }
 
     @Override
-    public SubmissionsModel addSubmission(SubmissionsModel submission) {
+    public SubmissionDTO addSubmission(SubmissionDTO submission) {
 
          String id = UUID.randomUUID().toString();
          submission.setId(id);
@@ -36,7 +36,7 @@ public class SubmissionRepoImpl implements SubmissionsRepo{
     }
 
     @Override
-    public SubmissionsModel updateSubmission(SubmissionsModel submission) {
+    public SubmissionDTO updateSubmission(SubmissionDTO submission) {
 
         if (submissionsMap.containsKey(submission.getId())) {
             submissionsMap.put(String.valueOf(submission.getId()), submission);
@@ -47,7 +47,7 @@ public class SubmissionRepoImpl implements SubmissionsRepo{
     }
 
     @Override
-    public SubmissionsModel deleteSubmission(String id) {
+    public SubmissionDTO deleteSubmission(String id) {
         return submissionsMap.remove(id);
     }
 

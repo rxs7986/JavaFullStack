@@ -1,23 +1,21 @@
 package com.example.demo.Service;
 
 
-import com.example.demo.Model.SubmissionsModel;
-import com.example.demo.Repository.SubmissionRepoImpl;
-import org.springframework.stereotype.Service;
+import com.example.demo.Model.SubmissionDTO;
 
 import java.util.List;
 
 
 public interface SubmissionsService {
 
-    SubmissionsModel getSubmission(String id);
+    SubmissionDTO getSubmission(String id);
 
-    SubmissionsModel addSubmission(SubmissionsModel submission);
+    SubmissionDTO addSubmission(SubmissionDTO submission);
 
-    SubmissionsModel updateSubmission(SubmissionsModel submission);
+    SubmissionDTO updateSubmission(SubmissionDTO submission);
 
-    SubmissionsModel deleteSubmission(String id);
+    SubmissionDTO deleteSubmission(String id);
 
-    List<SubmissionsModel> getAll();
+    List<SubmissionDTO> getAll();
 
 }
