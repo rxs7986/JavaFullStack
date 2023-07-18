@@ -21,3 +21,92 @@ assertEquals(expected, actul) - 2 args
 
 Mockito
 -mock dependancies
+
+
+DB
+
+Schema
+DDL: Data Definition lang
+-create //  schema/procedure/tab;e
+-alter
+-drop
+-truncate
+DML- Data Manipulation lang : Operations within single data table
+-insert
+-update
+-delete
+-select (DQL)
+
+
+
+
+
+-
+
+
+
+
+
+create schema submissions;
+use submissions;
+
+create table submission{
+//consultant_id
+
+}
+
+
+
+alter table add coloumn id varchar(20) primary key;
+
+drop table submission;
+
+
+primary key- unique id in table
+
+foreign key: primary key in another table
+
+create table lead_details{
+id varchar(20) primary key;
+------
+}
+
+create table consultant_details{
+id varchar(20) primary key;-
+lead_id varchar(60)
+--------
+}
+
+
+describe <table_name>;
+
+DCL
+aggregate : count. avg, min/max
+column filter
+row filter where
+
+%- partial match
+= - exact match
+IN - matches to any of the value
+grouping: group the rows
+
+
+
+DCL
+-
+
+
+constraint: condition/ limitations on the value of the coloumn
+-primary key - unique and not null
+- unique key - unique
+-not null
+-foreign key - alter table1 foreign key() references table2
+can fk be null, duplicate
+-composite key: combination of more than 1 column
+
+
+
+functions- reusable code
+stored procedures - block of code
+
+
