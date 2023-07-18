@@ -295,6 +295,27 @@ FROM submission
 INNER JOIN lead_details ON submission.lead_id = lead_details.id
 GROUP BY lead_id, first_name,submission_date,submission_id;
 
+alter table submission drop lead_id;
+select * from submission;
+select * from lead_details;
+select * from consultant_details;
+
+SELECT s.*
+FROM submission s
+JOIN consultant_details c ON s.consultant_id = c.id
+JOIN lead_details l ON l.id = c.lead_id
+WHERE l.first_name = 'Manohar'
+  AND s.submission_date = '2023-06-18';
+
+SELECT count(submission_id), l.first_name,l.id
+FROM submission s
+JOIN consultant_details c ON s.consultant_id = c.id
+JOIN lead_details l ON l.id = c.lead_id group by lead_id;
+
+
+
+
+
 
 
 
