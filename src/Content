@@ -93,8 +93,8 @@ grouping: group the rows
 
 
 DCL
--
-
+-grant
+-revokr
 
 constraint: condition/ limitations on the value of the coloumn
 -primary key - unique and not null
@@ -108,5 +108,28 @@ can fk be null, duplicate
 
 functions- reusable code
 stored procedures - block of code
+
+JDBC-
+java.sql package
+classes & interfaces
+Connection: Properties- hostname, port, dn name, username, pwd
+ResultSet: result post query execution
+-utility methods
+PreparedStatement : help you to run sql query
+CallableStatement: stored procedures
+
+Hibernate: mapping done in XML file // Implementation
+(mapped column name with object var)
+JPA - specification
+<groupid>org.spring
+<artifact>spring-boot-starter-data-jpa
+
+properties
+.yaml file/ .properties file
+<d>
+mysql
+mysql-connector-java
+8.0.33 (v)
+<d>
 
 
