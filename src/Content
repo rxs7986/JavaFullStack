@@ -133,3 +133,15 @@ mysql-connector-java
 <d>
 
 
+Relationships
+-one to many
+-many to many
+-many to one: mapping parent entity
+=one to one
+-
+
+fetch-> lazy, eager
+cascade & types
+
+
+

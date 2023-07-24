@@ -42,6 +42,7 @@ public class SubmissionDetails {
 
 @Column(name ="clientt_name")
     private String clientt_name;
+
 @Column(name="pay_rate")
     private int pay_rate;
 
@@ -59,5 +60,5 @@ public class SubmissionDetails {
   private String zip;
 
     @Column(name="submission_status")
-    private boolean submission_status;
+    private String submission_status;
 }
